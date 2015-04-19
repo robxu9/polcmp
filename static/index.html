@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Compare poltical candidates easily and accurately.">
+    <!-- <link rel="icon" href="/favicon.ico"> literally have no favicon.ico -->
+
+    <title>PolCompare</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>PolCompare</h1>
+        <h1><small>United States 2016 Presidential Race</small></h1>
+        <p>Compare candidates of the <b>United States 2016 Presidential Race</b> among critical fields.</p>
+        <p>Find a mistake, need a new critical field, or missing a candidate? This site is composed entirely from <a href="https://help.github.com/articles/markdown-basics/">Markdown</a>, and every candidate has its own file. The files are combined to show the page you see.</p>
+        <p class="text-center"><a href="https://www.github.com/polcmp/2016_usa"><img src="/GitHub-Mark-120px-plus.png" height="42" width="42"> Edit or add new candidates here.</a></p>
+      </div>
+    </div>
+
+    <div class="container" id="main">
+      <h4 class="text-center">We're downloading the latest data for you to make sure that everything's up to date. Hold tight!</h4>
+      <p class="text-center"><img src="/ajax-loader.gif"></p>
+      <p class="text-center" id="progress">The latest progress will be shown here.</p>
+    </div>
+
+    <script>
+    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+    </script>
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="/git-html5.js"></script>
+    <script src="/idb.filesystem.min.js"></script>
+    <script src="/polcmp.js"></script>
+  </body>
+</html>
